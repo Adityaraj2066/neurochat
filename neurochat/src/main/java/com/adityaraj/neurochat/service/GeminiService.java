@@ -10,7 +10,7 @@ import java.util.*;
 @Service
 public class GeminiService {
 
-	@Value("${openrouter.api.key}")
+	@Value("${OPENROUTER_API_KEY}")
     private String apiKey;
 
     private final String URL = "https://openrouter.ai/api/v1/chat/completions";
