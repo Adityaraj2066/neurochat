@@ -1,142 +1,170 @@
 # 🧠 NeuroChat – AI-Powered Chat Backend 🚀
 
-> A production-ready AI chatbot backend built with Spring Boot, featuring secure authentication, scalable rate limiting, AI integration, and real-world payment systems.
+A production-ready AI chatbot backend built with Spring Boot, featuring secure authentication, rate limiting, AI integration, and real-world payment systems.
 
 ---
 
-## 🌐 Live Demo  
-🔗 https://neurochat-amxn.onrender.com/chat.html  
+## 🌐 Live Demo
+
+🔗 https://neurochat-amxn.onrender.com/chat.html
 
 ---
 
-## 📌 Introduction  
+## 📌 Introduction
 
-NeuroChat is a **scalable backend system for AI-driven conversations**, designed to simulate real-world SaaS platforms like ChatGPT.  
+NeuroChat is a **scalable backend system for AI-driven conversations**, designed to simulate real-world SaaS platforms like ChatGPT.
 
-It combines **secure authentication, AI API integration, rate limiting, and monetization**, making it a complete backend solution for modern AI applications.
+It combines:
 
----
-
-## ✨ Features  
-
-- 🔐 **JWT Authentication** – Secure, stateless user authentication  
-- 🤖 **AI Chat Integration** – Real-time responses using LLM APIs (OpenRouter)  
-- ⚡ **Rate Limiting (Redis)** – Prevents API abuse and ensures fair usage  
-- 💳 **Payment Integration** – Razorpay for premium features  
-- 💾 **Data Persistence** – MySQL with JPA/Hibernate  
-- 🐳 **Dockerized Deployment** – Container-ready application  
-- 🔄 **CI/CD Pipeline** – Automated build & deployment using GitHub Actions  
-- ☁️ **Cloud Deployment** – Hosted on Render  
+* 🔐 Secure authentication
+* 🤖 AI API integration
+* ⚡ Rate limiting
+* 💳 Monetization
 
 ---
 
-## 🛠️ Tech Stack  
+## ✨ Features
 
-| Category        | Technology |
-|----------------|-----------|
-| Backend        | Java 17, Spring Boot |
-| Security       | Spring Security, JWT |
-| Database       | MySQL, Hibernate (JPA) |
-| Caching        | Redis |
-| AI Integration | OpenRouter API (GPT models) |
-| Payments       | Razorpay |
-| DevOps         | Docker, GitHub Actions, Render |
-| Build Tool     | Maven |
+* 🔐 JWT Authentication – Secure, stateless login
+* 🤖 AI Chat Integration – Real-time responses via OpenRouter
+* ⚡ Rate Limiting (Redis) – Prevent abuse
+* 💳 Payment Integration – Razorpay
+* 🧱 Clean Architecture – Layered backend design
+* 🚀 CI/CD Pipeline – GitHub Actions + Docker
 
 ---
 
-## 🚀 Installation & Setup  
+## 🛠️ Tech Stack
+
+| Category   | Technology                     |
+| ---------- | ------------------------------ |
+| Backend    | Java 17, Spring Boot           |
+| Security   | Spring Security, JWT           |
+| Database   | MySQL, Hibernate (JPA)         |
+| Caching    | Redis                          |
+| AI         | OpenRouter API                 |
+| Payments   | Razorpay                       |
+| DevOps     | Docker, GitHub Actions, Render |
+| Build Tool | Maven                          |
+
+---
+
+## 🖼️ Screenshots
+
+### 💬 Chat UI
+
+![Chat UI](docs/chat-ui.png)
+
+---
+
+## ⚙️ Installation & Setup
 
 ### 🔧 Prerequisites
-- Java 17+
-- Maven
-- MySQL
-- Redis (optional but recommended)
+
+* Java 17+
+* Maven
+* MySQL
+* Redis (optional)
 
 ---
 
-### 📥 Clone Repository
+### 📦 Clone Repository
+
 ```bash
-git clone https://github.com/your-username/neurochat.git
+git clone https://github.com/Adityaraj2066/neurochat.git
 cd neurochat
+```
 
-⚙️ Configure Environment Variables
+---
 
-Create/update application.properties:
+### 🔧 Configure Environment
 
+Update `application.properties`:
+
+```properties
 OPENROUTER_API_KEY=your_api_key
 RAZORPAY_KEY=your_key
 DB_USERNAME=your_db_user
 DB_PASSWORD=your_db_pass
+```
 
+---
 
-▶️ Run Application
+### ▶️ Run Application
+
+```bash
 mvn clean install
 mvn spring-boot:run
+```
 
+---
 
-🧪 Usage
-Open the live demo or local frontend
-Register/Login to get JWT token
-Send chat prompts
-Receive AI-generated responses
-Upgrade via payment for premium usage
+## 🧪 Usage
 
+1. Open live demo or local frontend
+2. Register/Login
+3. Get JWT token
+4. Send chat prompts
+5. Receive AI responses
+6. Upgrade via payment
 
-📂 Project Structure
-neurochat/
- ├── controller/        # REST API endpoints
- ├── service/           # Business logic & AI integration
- ├── repository/        # Database access layer
- ├── entity/            # Data models
- ├── config/            # Configurations
- ├── security/          # JWT & filters
- ├── resources/
- │    ├── static/       # Frontend (chat.html)
- │    ├── templates/
- │    └── application.properties
+---
 
+## 🏗️ Project Structure
 
+```bash
+src/
+├── controller/     # REST APIs
+├── service/        # Business logic
+├── repository/     # DB layer
+├── entity/         # Models
+├── config/         # Config
+├── security/       # JWT & filters
+└── resources/
+    ├── static/    # Frontend
+    ├── templates/
+    └── application.properties
 
- ## 🖼️ Screenshots
+docs/
+└── chat-ui.png
+```
 
-### 💬 Chat UI
-![Chat UI](neurochat/docs/chat-ui.png)
+---
 
+## ⚡ CI/CD Pipeline
 
-🔄 CI/CD Pipeline
+GitHub Actions workflow:
 
-This project uses GitHub Actions for automation.
-
-Workflow:
-
-Code Push → Build (Maven) → Dockerize → Deploy (Render)
+Code Push → Build (Maven) → Docker → Deploy (Render)
 
 ✔ Automated builds
-✔ Consistent deployments
-✔ DevOps-ready architecture
+✔ Continuous deployment
+✔ DevOps-ready
 
+---
 
-🚀 Future Improvements
-🔌 WebSocket-based real-time chat
-📊 Monitoring (Prometheus + Grafana)
-📘 Swagger/OpenAPI documentation
-⚡ AI response caching (Redis)
-🧪 Unit & integration testing
-📦 Microservices architecture
-🤝 Contributing
+## 🚀 Future Improvements
+
+* WebSocket real-time chat
+* Monitoring (Prometheus + Grafana)
+* Swagger API docs
+* Redis caching for AI
+* Unit & integration testing
+* Microservices architecture
+
+---
+
+## 🤝 Contributing
 
 Contributions are welcome!
 
-Fork the repository
-Create a feature branch
-Commit your changes
-Push and open a Pull Request
-📜 License
+1. Fork repo
+2. Create branch
+3. Commit changes
+4. Push & open PR
 
-This project is licensed under the MIT License.
+---
 
-👨‍💻 Author
+## 📄 License
 
-Adityaraj
-Backend Developer | Java | Spring Boot | AI Systems
+MIT License
