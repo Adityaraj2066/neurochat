@@ -98,13 +98,10 @@ neurochat/
 
 
 
- 🖼️ Screenshots
+ ## 🖼️ Screenshots
 
-(Add screenshots here for better presentation)
-
-Chat UI
-API response
-Payment flow
+### 💬 Chat UI
+![Chat UI](neurochat/docs/chat-ui.png)
 
 
 🔄 CI/CD Pipeline
