@@ -1,0 +1,159 @@
+.chat-page {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #343541;
+  color: white;
+  display: flex;
+  min-height: 100vh;
+}
+
+.chat-sidebar {
+  width: 260px;
+  background: #202123;
+  height: 100vh;
+  padding: 10px;
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+
+.chat-sidebar > button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #10a37f;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.chat-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chat-item {
+  padding: 8px;
+  cursor: pointer;
+  flex: 1;
+}
+
+.chat-item:hover {
+  background: #2a2b32;
+}
+
+.chat-item.active {
+  background: #343541;
+}
+
+.delete-btn {
+  opacity: 0;
+  padding: 5px;
+  cursor: pointer;
+  color: #888;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.chat-wrapper:hover .delete-btn {
+  opacity: 1;
+}
+
+.delete-btn:hover {
+  color: red;
+}
+
+.chat-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.chat-header {
+  padding: 10px;
+  background: #40414f;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.chat-header-title {
+  margin-right: auto;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.chat-github-link {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.chat-auth-buttons button {
+  background: #10a37f;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  margin-left: 6px;
+  cursor: pointer;
+}
+
+.chat-auth-buttons a {
+  text-decoration: none;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  max-height: calc(100vh - 120px);
+}
+
+.msg {
+  padding: 14px;
+  border-radius: 14px;
+  margin: 10px 0;
+  max-width: 65%;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.msg.user {
+  background: #10a37f;
+  margin-left: auto;
+}
+
+.msg.bot {
+  background: #444654;
+}
+
+.chat-input-area {
+  display: flex;
+  padding: 10px;
+  background: #40414f;
+  position: sticky;
+  bottom: 0;
+}
+
+.chat-input-area input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: #40414f;
+  color: white;
+  outline: none;
+}
+
+.chat-input-area button.send {
+  background: #10a37f;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.chat-input-area button.send:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

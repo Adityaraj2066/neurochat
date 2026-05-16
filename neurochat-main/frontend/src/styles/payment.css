@@ -1,0 +1,31 @@
+.payment-page {
+  background: #343541;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.payment-box {
+  background: #202123;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.payment-box button {
+  width: 100%;
+  padding: 12px;
+  background: #10a37f;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.payment-box button:hover {
+  opacity: 0.9;
+}

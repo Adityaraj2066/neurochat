@@ -1,0 +1,63 @@
+.upgrade-page {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #1f1f2e, #343541);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.upgrade-card {
+  background: #202123;
+  border-radius: 16px;
+  padding: 30px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
+
+.upgrade-card h2 {
+  margin: 0 0 10px;
+}
+
+.upgrade-price {
+  font-size: 32px;
+  color: #10a37f;
+  margin: 10px 0;
+}
+
+.upgrade-features {
+  text-align: left;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.upgrade-features li {
+  margin: 8px 0;
+  list-style: none;
+}
+
+.upgrade-features li::before {
+  content: '✔ ';
+  color: #10a37f;
+}
+
+.upgrade-card button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(45deg, #10a37f, #0e8c6d);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.upgrade-back {
+  margin-top: 15px;
+  display: block;
+  color: #aaa;
+  text-decoration: none;
+}
