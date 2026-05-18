@@ -6,7 +6,7 @@ A production-ready AI-powered full-stack SaaS chat application built using React
 
 # 🌐 Live Demo
 
-🔗 https://neurochat-amxn.onrender.com
+🔗 https://neurochat-ai-1.onrender.com/chat.html
 
 ---
 
